@@ -34,14 +34,14 @@ namespace Inventory_Application
                 if (currentForm != null)
 
                     currentForm.Close();
-                currentForm = childForm;
-                childForm.TopLevel = false;
-                childForm.FormBorderStyle = FormBorderStyle.None;
-                childForm.Dock = DockStyle.Fill;
-                pnlChildForm.Controls.Add(childForm);
-                pnlChildForm.Tag = childForm;
-                childForm.BringToFront();
-                childForm.Show();
+                    currentForm = childForm;
+                    childForm.TopLevel = false;
+                    childForm.FormBorderStyle = FormBorderStyle.None;
+                    childForm.Dock = DockStyle.Fill;
+                    pnlChild.Controls.Add(childForm);
+                    pnlChild.Tag = childForm;
+                    childForm.BringToFront();
+                    childForm.Show();
 
             }
             catch
