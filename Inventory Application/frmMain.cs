@@ -16,10 +16,7 @@ namespace Inventory_Application
         {
             InitializeComponent();
             frmLogin login = new frmLogin();
-            label2.Text = login.username;
-            
-
-    
+            label2.Text = login.username;         
         }
 
         private void frmMain_FormClosed(object sender, FormClosedEventArgs e)
@@ -50,6 +47,16 @@ namespace Inventory_Application
             }
 
 
+        }
+
+        private void btnDashboard_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmDashboard());
+        }
+
+        private void btnToday_Click(object sender, EventArgs e)
+        {
+            openChildForm(new frmToday());
         }
     }
  
